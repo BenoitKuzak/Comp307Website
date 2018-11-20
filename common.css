@@ -35,6 +35,31 @@ body {
     border-radius: 5px;
     padding: 0px 5px;
 }
+
+.header .headerElement1 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12.5px;
+    margin-left: 134px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.header a {
+    color: white;
+}
+
+.header .headerElement2 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12.5px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
 /* Content portion */
 .content {
     margin-top: 50px;
