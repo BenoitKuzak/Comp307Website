@@ -1,0 +1,12 @@
+.aboutWebsite {
+    width : 70%;
+    position: relative;
+    margin-left: 52px;
+    color: darkslategrey;
+    font-size: 17px;
+}
+
+.aboutUs {
+    text-align: center;
+    width : 70%;
+}
