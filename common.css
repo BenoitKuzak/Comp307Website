@@ -1,6 +1,12 @@
 body {
     margin: 0;
 }
+
+.navbar-brand {
+    height: 50px;
+    width: 50px;
+}
+
 .header {
     position:fixed;
     height: 50px;
@@ -29,6 +35,7 @@ body {
     height: 25px;
     margin-top: 12.5px;
 }
+
 .header .search-bar input[type=text]{
     width: 100%;
     border: black 1px solid;
@@ -49,6 +56,14 @@ body {
 }
 
 .header a {
+    color: white;
+}
+
+.navbar-nav{
+    font-style: oblique;
+}
+
+.navbar a {
     color: white;
 }
 

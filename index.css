@@ -1,3 +1,8 @@
+.navbar-expand-sm {
+    background-color: darkslategrey;
+    padding-top: 0.25rem; padding-bottom: 0.25rem;
+}
+
 .aboutWebsite {
     color: darkslategrey;
     font-size: 17px;
