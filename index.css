@@ -68,7 +68,7 @@
     grid-column-end: 5;
 }
 
-img{
+.container img{
     width: 90%;
     height: 90%;
 }

@@ -24,21 +24,40 @@
 <body>
 
     <!-- The header of all pages -->
-    <nav class="navbar navbar-expand-sm justify-content-end">
-        <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
-        <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search...">
-            <button class="btn btn-success" type="submit">Search</button>
-        </form>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link px-3" href="similar.html">Video Games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-3" href="similar.html">Movies</a>
-            </li>
-        </ul>
-    </nav>
+    <div class='header-desktop'>
+        <nav class="navbar navbar-expand-sm justify-content-end">
+            <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="similar.html">Video Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="similar.html">Movies</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class='header-mobile'>
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="similar.html">Video Games</a>
+                  <a class="dropdown-item" href="similar.html">Movies</a>
+                </div>
+              </div>
+        </nav>
+    </div>
     
     <div class="container">
     
