@@ -10,16 +10,16 @@ $(document).ready(function() {
 
 function submitSimilar() {
     postData = {
-        id1: $('select[name=game]').val(),
-        id2: $('input[name=curgame]').val(),
+        mainid: $('input[name=curgame]').val(),
+        simids: $('select[name=game]').val(),
     }
-    renderPopupMessage("Thank you for suggesting a game!","You're Welcome!");
     $.ajax({
         url: 'index.html',
         type: 'POST',
         dataType: 'json',
         data: postData,
         success: function(result) {
+            renderPopupMessage("Thank you for suggesting a game!","You're Welcome!");
         },
         error: function(error) {
             console.log(error);
