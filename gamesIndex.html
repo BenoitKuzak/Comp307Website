@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Similar</title>
+    <title>Games</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="common.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="gamesIndex.css">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
@@ -20,7 +20,6 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
     <!-- The header of all pages -->
@@ -46,67 +45,64 @@
             <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
             <form class="form-inline" action="/action_page.php">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                <button class="btn btn-success" type="submit">Search</button>
             </form>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="similar.html">Video Games</a>
-                  <a class="dropdown-item" href="similar.html">Movies</a>
+                    <a class="dropdown-item" href="similar.html">Video Games</a>
+                    <a class="dropdown-item" href="similar.html">Movies</a>
                 </div>
-              </div>
+            </div>
         </nav>
     </div>
-    
-    <div class="container">
-    
-        <div class="row py-5">
+
+    <div class = "container-fluid">
+        <div class = "row py-5">
             <div class="col">
-                <div class="aboutUs"> <h1>About us</h1> </div>
-                <!-- The description of the website-->
-                <div class="aboutWebsite">
-                    Give similar suggestions to the movies and video games that you have enjoyed in the past and may also enjoy in the future. <br>
-                    <p>The suggestion process is crowd-sourced, as in users put the other titles that they feel are similar
-                        to a certain movie or video game. Then we would compile the data and present similar titles to a movie or video game
-                        based on how consistently people feel those titles are similar.</p>
-                </div>
+                <h1 style="text-align: center">Video Games</h1>
             </div>
         </div>
-        
-        <div class="row py-5">
-            <div class="col-md-3">
-                <div class="benoit">
-                <figure class="benoit">
-                    <img src="benoit.PNG" class="rounded-circle">
-                    <figcaption>Benoit: Frontend</figcaption>
-                </figure>
-                </div>
+
+        <!-- Search by developer-->
+        <div class = "row pt-5">
+            <div class="col">
+                <p>Browse games depending on the developer</p>
             </div>
-            <div class="col-md-3">
-                <div class="mathieu">
-                <figure class="mathieu">
-                    <img src="Mathieu.PNG" class="rounded-circle">
-                    <figcaption>Mathieu: Frontend</figcaption>
-                </figure>
-                </div>
+        </div>
+
+        <div class = "row">
+            <div class="col">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Developer name...">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
             </div>
-            <div class="col-md-3">
-                <div class="silan">
-                <figure class="silan">
-                    <img src="silan.PNG" class="rounded-circle">
-                    <figcaption>Silan: Backend</figcaption>
-                </figure>
-                </div>
+        </div>
+        <!-- Search by tags-->
+        <div class = "row pt-5">
+            <div class="col">
+                <p>Browse games depending on the following categories</p>
             </div>
-            <div class="col-md-3">
-                <div class="affan">
-                <figure class="affan">
-                    <img src="affan.PNG" class="rounded-circle">
-                    <figcaption>Affan: Backend</figcaption>
-                </figure>
-                </div>
+        </div>
+
+        <div class = "row w-50">
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">RPG</li>
+                    <li class="list-group-item">RTS</li>
+                    <li class="list-group-item list-group-item-success">Action</li>
+                    <li class="list-group-item">Horror</li>
+                    <li class="list-group-item">Indie</li>
+                    <li class="list-group-item">Adventure</li>
+                    <li class="list-group-item">Casual</li>
+                    <li class="list-group-item">Singleplayer</li>
+                    <li class="list-group-item">Multiplayer</li>
+                </ul>
             </div>
         </div>
     </div>
-    
+
 </body>
+</html>
