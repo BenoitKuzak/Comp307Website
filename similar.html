@@ -1,6 +1,10 @@
 <head>
     <link rel="stylesheet" type="text/css" href="common.css">
     <link rel="stylesheet" type="text/css" href="similar.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="similar.js"></script>
+    <script src="popup.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -54,15 +58,15 @@
     <!-- CONTENT -->
     <div class='content'>
         <div class='tag-bar'>
-            <div class='tag selected'>RPG</div>
+            <div class='tag'>RPG</div>
             <div class='tag'>RTS</div>
-            <div class='tag selected'>Action</div>
+            <div class='tag'>Action</div>
             <div class='tag'>Horror</div>
             <div class='tag'>Indie</div>
             <div class='tag'>Adventure</div>
             <div class='tag'>Casual</div>
             <div class='tag'>Singleplayer</div>
-            <div class='tag selected'>Multiplayer</div>
+            <div class='tag'>Multiplayer</div>
         </div>
         <div class='similar-content'>
             <div class='main item'>
@@ -264,7 +268,26 @@
             </div>
         </div>
         <div class='similar-form'>
-            
+            <div class='title'>
+                Suggest Similarity
+            </div>
+            <input type='hidden' name='curgame' value='10'></input>
+            <div class="form-group">
+                <select multiple class='form-control' name="game">
+                    <option value='1'>Diablo 3</option>
+                    <option value='2'>A Link To The Past</option>
+                    <option value='3'>CS:GO</option>
+                    <option value='4'>Darksiders II</option>
+                    <option value='5'>Grim Dawn</option>
+                    <option value='6'>Path of Exile</option>
+                    <option value='7'>Portal</option>
+                    <option value='8'>Sims</option>
+                    <option value='9'>PUBG</option>
+                </select>
+            </div> 
+            <div class='button-row'>
+                <div class='fake-button' onclick='submitSimilar()'>Suggest</div>
+            </div>
         </div>
     </div>
 </body>

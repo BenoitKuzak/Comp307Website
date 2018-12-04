@@ -43,6 +43,18 @@ body {
     height: 25px;
     margin-top: 12.5px;
 }
+.button-row {
+    text-align: center;
+}
+.fake-button {
+    background: darkblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display:inline-block;
+    cursor: pointer;
+}
 
 .header .search-bar input[type=text]{
     width: 100%;
