@@ -6,7 +6,9 @@
     height: 300px;
     overflow-y: scroll;
 }
-
+.scrollMobile {
+    display: none;
+}
 /* To set up a checkbox inside a dropdown */
 
 .multiselect {
