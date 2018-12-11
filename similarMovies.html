@@ -1,0 +1,292 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="similar.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="similar.js"></script>
+    <script src="popup.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- The header of all pages -->
+<div class='header-desktop'>
+    <nav class="navbar navbar-expand-sm justify-content-end">
+        <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-3" href="similar.html">Video Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3" href="similar.html">Movies</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class='header-mobile'>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href='index.html'><img src='logo.png'/></a>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="similar.html">Video Games</a>
+                <a class="dropdown-item" href="similar.html">Movies</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- CONTENT -->
+<div class='content'>
+    <div class='tag-bar'>
+        <div class='tag'>Comedy</div>
+        <div class='tag'>Romance</div>
+        <div class='tag'>Action</div>
+        <div class='tag'>Horror</div>
+        <div class='tag'>Indie</div>
+        <div class='tag'>Casual</div>
+        <div class='tag'>Classic</div>
+        <div class='tag'>Documentary</div>
+    </div>
+    <div class='similar-content'>
+        <div class='main item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank first"><div class='nb'>1</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank second"><div class='nb'>2</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank third"><div class='nb'>3</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank"><div class='nb'>4</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank"><div class='nb'>5</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank"><div class='nb'>6</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank"><div class='nb'>7</div></div>
+            </div>
+        </div>
+        <div class='suggestion item'>
+            <div class='item-head'>
+                <div class='title'>
+                    <h1>Diablo 2</h1>
+                </div>
+                <div class='creator'>
+                    <h2>Blizzard North</h2>
+                </div>
+            </div>
+            <div class='image'>
+                <img src='https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png'/>
+            </div>
+            <div class='description'>
+                <p>Diablo II is an action role-playing hack and slash video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS.</p>
+            </div>
+            <div class='right-bar'>
+                <div class='tag'>Comedy</div>
+                <div class='tag'>Action</div>
+                <div class='tag'>Documentary</div>
+                <div class="sim-rank"><div class='nb'>8</div></div>
+            </div>
+        </div>
+    </div>
+    <div class='similar-form'>
+        <div class='title'>
+            Suggest Similarity
+        </div>
+        <input type='hidden' name='curgame' value='10'></input>
+        <div class="form-group">
+            <select multiple class='form-control' name="game">
+                <option value='1'>Diablo 3</option>
+                <option value='2'>A Link To The Past</option>
+                <option value='3'>CS:GO</option>
+                <option value='4'>Darksiders II</option>
+                <option value='5'>Grim Dawn</option>
+                <option value='6'>Path of Exile</option>
+                <option value='7'>Portal</option>
+                <option value='8'>Sims</option>
+                <option value='9'>PUBG</option>
+            </select>
+        </div>
+        <div class='button-row'>
+            <div class='fake-button' onclick='submitSimilar()'>Suggest</div>
+        </div>
+    </div>
+</div>
+</body>
